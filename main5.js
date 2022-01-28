@@ -66,20 +66,7 @@
 //    console.log(elem = -1);
 //     return -1; 
 // }
-// findIndex([1,2,3,4,5,6,7],7)
-
-//5.1 Implement following array methods:
-// Flat
-// Map
-// reduce
-
-// function reduce(func, index arr) {
-//     function sum(a,b) {
-//        return a+b
-//     }
-
-// }
-// reduce([1,2,3,4,5])
+// findIndex([1,2,3,4,5,6,7],7);
 
 
 
@@ -130,3 +117,74 @@
 // }
 // //isIsogram("arfghsjy  l ue ");
 // isIsogram("arflghsjylukfe");
+
+// 5.4 Also please take a look at Lodash documentation and try to implement the following functions
+
+// _.tail
+
+// function implementTail(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] === array[i+1];
+//     }  array.length = array.length-1; 
+//         console.log(array);
+//         return array;
+// }
+// implementTail([1,2,3,4,5]);
+
+
+//_.pull
+// function implementPull(array, value) {
+//      let arr = [];
+//     for (let i = 0; i < array.length; i++) { 
+//        if (array[i] === value) {
+//            continue;
+//        } else {
+//         arr.push(array[i]);  
+//         }
+//     }  
+//     console.log(arr);
+//     return arr;
+// }
+// implementPull([1,2,5,3,4,5], 5);
+
+
+//_.intersection
+
+// function implementIntersection(arr1, arr2) {
+//      let  newarr = [];
+//     for (let i = 0; i < arr1.length; i++) { 
+//        for (let j = 0; j < arr2.length; j++) {
+//            if (arr1[i] === arr2[j]) {
+//                newarr.push(arr1[i]) 
+//            }
+           
+//        }
+//     }  
+//     console.log(newarr);
+//     return newarr;
+// }
+// implementIntersection([1,2,5,3,4,], [2,4,5]);
+
+// _.take
+
+// function implementTake(arr, number) {
+//     let newArr = [];
+//     for (let i = 0; i < number; i++) { 
+//         if(number == undefined){
+//             newArr.push(arr[0]);
+//             console.log(newArr);
+//            break; // ays paymany chi ashxatum
+//         }
+//         if (number > arr.length) {
+//             number = arr.length;
+//             newArr.push(arr[i]);
+//         }
+//          else {newArr.push(arr[i]);}
+//     }  
+//     console.log(newArr);
+//     return newArr;
+// }
+// implementTake([1,2,5,3,4], 3 );
+// implementTake([1,2,5,3,4], 7 );
+// implementTake([1,2,5,3,4], 0 );
+// implementTake([1,2,5,3,4]);
